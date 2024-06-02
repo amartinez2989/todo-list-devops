@@ -19,8 +19,3 @@ variable "include_ipv4" {
   type    = bool
   default = true
 }
-variable "github_token" {
-  description = "GitHub token for repository access"
-  type        = string
-  sensitive   = true
-}
