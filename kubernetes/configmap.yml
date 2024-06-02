@@ -1,0 +1,9 @@
+# configmap.yml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-configmap
+data:
+  mysql_database: todos
+  customers_host: db
+

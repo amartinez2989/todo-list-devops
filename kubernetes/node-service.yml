@@ -1,0 +1,13 @@
+# node-service.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+  selector:
+    app: todo-list-node

@@ -1,5 +1,6 @@
 provider "aws" {
-  region = var.region
+  region  = var.region
+  profile = "personal"
 }
 terraform {
   required_version = "~> 1.8.3"

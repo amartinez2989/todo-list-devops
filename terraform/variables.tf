@@ -6,7 +6,7 @@ variable "region" {
 variable "server_type" {
   type        = string
   description = "Instance type"
-  default     = "t2.micro"
+  default     = "t2.large"
 }
 
 variable "public_server_count" {
@@ -18,4 +18,9 @@ variable "public_server_count" {
 variable "include_ipv4" {
   type    = bool
   default = true
+}
+variable "github_token" {
+  description = "GitHub token for repository access"
+  type        = string
+  sensitive   = true
 }

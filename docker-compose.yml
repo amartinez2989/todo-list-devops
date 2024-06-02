@@ -2,7 +2,7 @@ version: "3"
 
 services:
   node:
-    container_name: node-app  
+    container_name: todo-list-app
     build:
       context: .
     image: nodeapp
