@@ -8,4 +8,5 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 10Gi
+      storage: 10Gi  # Ajusta la cantidad de almacenamiento solicitada aquí
+  storageClassName: gp2
