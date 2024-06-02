@@ -57,6 +57,18 @@ pipeline {
                 }
             }
         }
+        stage('Terraform Init and Apply') {
+            steps {
+                dir('terraform') {
+                    script {
+                        sh '''
+                            terraform init
+                            terraform apply -auto-approve
+                        '''
+                    }
+                }
+            }
+        }
         stage('Deploy to Kubernetes') {
             steps {
                 script {
