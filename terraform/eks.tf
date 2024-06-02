@@ -29,8 +29,8 @@ module "eks" {
   eks_managed_node_groups = {
     node_cf = {
       min_size     = 1
-      max_size     = 2
-      desired_size = 1
+      max_size     = 4  # Aumenta el número máximo de nodos
+      desired_size = 3  # Ajusta el número deseado de nodos
 
       instance_types = ["t2.micro"]
       capacity_type  = "SPOT"

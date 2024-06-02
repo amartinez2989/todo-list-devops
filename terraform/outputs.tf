@@ -26,7 +26,7 @@ output "nat_gateway" {
   value       = module.vpc.igw_id
 }
 
-/*
+
 # Outputs EKS
 output "cluster_id" {
   description = "ID of the EKS cluster."
@@ -69,7 +69,7 @@ output "cloudwatch_log_group_name" {
   description = "Name of the CloudWatch log group for the EKS cluster."
   value       = module.eks.cloudwatch_log_group_name
 }
-*/
+
 # EC2 Jenkins
 output "private_key" {
   value     = tls_private_key.server.private_key_pem
