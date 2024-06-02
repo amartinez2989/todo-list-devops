@@ -38,7 +38,7 @@ version: '3'
 
 services:
   jenkins:
-    build: .
+    image : amartinez8929/jenkins:v1
     container_name: jenkins
     environment:
       - TZ=America/Argentina/Buenos_Aires    
@@ -75,29 +75,6 @@ volumes:
   sonarqube_extensions:
   sonarqube_data:
   sonarqube_conf:
-EOF
-
-cat <<EOF > /home/${USER}/Dockerfile
-# Usamos la imagen lts de Jenkins como base
-FROM jenkins/jenkins:lts-jdk17
-
-# Instalamos Git
-USER root
-RUN apt-get update && \
-    apt-get install -y git && \
-    rm -rf /var/lib/apt/lists/*
-
-# Usamos la imagen docker:dind y copias el binario a /usr/local/bin
-COPY --from=docker:dind /usr/local/bin/docker /usr/local/bin
-
-# Añadimos el usuario jenkins al grupo docker
-RUN usermod -aG root jenkins
-
-# Cambiamos el directorio de inicio
-WORKDIR /var/jenkins_home
-
-# Cambiamos el usuario para jenkins
-USER jenkins
 EOF
 
 # Cambiar permisos y ejecutar Docker Compose
