@@ -53,3 +53,6 @@ El objetivo principal es implementar un flujo de trabajo DevOps completo para el
 - Infraestructura aprovisionada y administrada mediante Terraform.
 - Aplicación desplegada y ejecutándose correctamente en un clúster de Kubernetes.
 - Herramientas de observabilidad configuradas y proporcionando información útil sobre el estado y rendimiento de la aplicación.
+
+#### Demo
+![](./docs/deploy.png)
