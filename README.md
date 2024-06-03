@@ -55,4 +55,12 @@ El objetivo principal es implementar un flujo de trabajo DevOps completo para el
 - Herramientas de observabilidad configuradas y proporcionando información útil sobre el estado y rendimiento de la aplicación.
 
 #### Demo
-![](./docs/deploy.png)
+![Demo gif](https://github.com/amartinez2989/todo-list-devops/blob/main/docs/deploy.gif)
+
+## Screenshots
+
+![App Screenshot](https://github.com/amartinez2989/todo-list-devops/blob/main/docs/blue-ocen-cluster-apply.gif)
+## Authors
+
+- [Andŕes M. Martínez](https://https://github.com/amartinez2989)
+
