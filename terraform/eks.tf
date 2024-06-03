@@ -32,7 +32,7 @@ module "eks" {
       max_size     = 4  # Aumenta el número máximo de nodos
       desired_size = 3  # Ajusta el número deseado de nodos
 
-      instance_types = ["t2.micro"]
+      instance_types = ["t2.large"]
       capacity_type  = "SPOT"
     }
   }

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: todo-list-app
-        image: amartinez8929/todo-list-app:1.0
+        image: amartinez8929/todo-list-app:latest
         ports:
         - containerPort: 3000
         env:
