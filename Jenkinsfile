@@ -73,16 +73,18 @@ pipeline {
             steps {
                 script {
                     def yamlFiles = [
-                        'terraform/configmap.yml',
-                        'terraform/db-deployment.yml',
-                        'terraform/db-service.yml',
-                        'terraform/mysql-pvc.yml',
-                        'terraform/node-deployment.yml',
-                        'terraform/node-service.yml',
-                        'terraform/secrets.yml'
+                        'configmap.yml',
+                        'db-deployment.yml',
+                        'db-service.yml',
+                        'mysql-pvc.yml',
+                        'node-deployment.yml',
+                        'node-service.yml',
+                        'secrets.yml'
                     ]
-                    for (file in yamlFiles) {
-                        sh "kubectl apply -f ${file}"
+                    dir('terraform') {
+                        for (file in yamlFiles) {
+                            sh "kubectl apply -f ${file}"
+                        }
                     }
                 }
             }
