@@ -79,7 +79,7 @@ resource "null_resource" "wait_for_instance" {
   }
 
   provisioner "local-exec" {
-    command = "sleep 1800"  # Espera 3 minutos para asegurarse de que la instancia esté completamente levantada
+    command = "sleep 180"  # Espera 3 minutos para asegurarse de que la instancia esté completamente levantada
     when    = create   # Ejecuta este provisioner solo cuando se crea la instancia
   }
 }
