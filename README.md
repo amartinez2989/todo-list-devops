@@ -58,7 +58,8 @@ El objetivo principal es implementar un flujo de trabajo DevOps completo para el
 ![Demo gif](https://github.com/amartinez2989/todo-list-devops/blob/main/docs/deploy.gif)
 
 ## Screenshots
-
+![App Screenshot](https://github.com/amartinez2989/todo-list-devops/blob/main/docs/cluster.gif)
+![App Screenshot](https://github.com/amartinez2989/todo-list-devops/blob/main/docs/ultimo.gif)
 ![App Screenshot](https://github.com/amartinez2989/todo-list-devops/blob/main/docs/blue-ocen-cluster-apply.gif)
 ## Authors
 
