@@ -81,7 +81,7 @@ pipeline {
                         'node-service.yml',
                         'secrets.yml'
                     ]
-                    dir('terraform') {
+                    dir('kubernetes') {
                         for (file in yamlFiles) {
                             sh "kubectl apply -f ${file}"
                         }
